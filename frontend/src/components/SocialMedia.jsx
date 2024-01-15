@@ -1,23 +1,17 @@
-import { BsLinkedin , BsInstagram , BsGithub } from 'react-icons/bs';
-import { FaFacebookF , FaDev } from 'react-icons/fa';
+import { BsLinkedin , BsGithub } from 'react-icons/bs';
+import { FaDev } from 'react-icons/fa';
 
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <BsLinkedin  />
+      <a href="https://www.linkedin.com/in/ayoub-chaiba-611576257/"><BsLinkedin /></a>
     </div>
     <div>
-      <BsGithub  />
+      <a href="https://github.com/AyoubChaiba"><BsGithub /></a>
     </div>
     <div>
-      <FaDev   />
+      <a href="https://dev.to/ayoubchaiba"><FaDev /></a>
     </div>
-    {/* <div>
-      <FaFacebookF />
-    </div>
-    <div>
-      <BsInstagram />
-    </div> */}
   </div>
 );
 
