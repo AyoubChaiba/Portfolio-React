@@ -1,23 +1,53 @@
 #work {
   position: relative;
-  z-index: 4;
-  &::after {
-    @media screen and (min-width: 700px) {
-      content: '';
-    }
+  &::after , &::before {
+    content: '';
+    // @media screen and (min-width: 700px) {
+    //   content: '';
+    // }
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
     background-color: #7c66e3;
     position: absolute;
-    z-index: 3;
     filter: blur(225px);
+    & {
+      -webkit-animation: mover 5s infinite  alternate;
+      animation: mover 5s infinite  alternate;
+    }
   }
-  &::after{
-    top: 25rem;
-    left: 5rem;
+  &::after {
+    top: 20rem;
+    left: 10rem;
+    background-color: #199eb6;
+  }
+  &::before {
+    bottom: 3rem;
+    width: 20.125rem;
+    height: 20.125rem;
+    right: 2rem;
   }
 }
+
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100px,-50px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100px,-100px);
+  }
+}
+
+
 .app__works {
   flex: 1;
   width: 100%;

@@ -1,6 +1,5 @@
 #home {
   position: relative;
-  z-index: 6;
   .app__wrapper {
     padding: 0;
 
@@ -8,32 +7,45 @@
       display: none;
     }
   }
-  &::after {
-    @media screen and (min-width: 700px) {
-      content: '';
-    }
+  &::after , &::before {
+    content: '';
+    // @media screen and (min-width: 700px) {
+    //   content: '';
+    // }
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
     background-color: #7c66e3;
     position: absolute;
     filter: blur(225px);
+    & {
+      -webkit-animation: mover 5s infinite  alternate;
+      animation: mover 5s infinite  alternate;
+    }
   }
-  &::after{
+  &::after {
     top: 10rem;
     left: 8rem;
   }
+  &::before {
+    bottom: 15rem;
+    width: 19.125rem;
+    height: 19.125rem;
+    background-color: #199eb6;
+    right: 8rem;
+  }
 
 }
+
+
+
 
 .app__header {
   flex: 1;
   width: 100%;
   height: 100%;
   flex-direction: row;
-
   padding: 6rem 2rem 0rem;
-
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }

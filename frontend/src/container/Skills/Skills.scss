@@ -1,21 +1,49 @@
 #skills {
   position: relative;
-  z-index: 3;
-  &::before {
-    @media screen and (min-width: 700px) {
-      content: '';
-    }
+  &::after , &::before {
+    content: '';
+    // @media screen and (min-width: 700px) {
+    //   content: '';
+    // }
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
     background-color: #7c66e3;
     position: absolute;
-    z-index: 3;
     filter: blur(225px);
+    & {
+      -webkit-animation: mover 5s infinite  alternate;
+      animation: mover 5s infinite  alternate;
+    }
   }
-  &::before{
-    top: 25rem;
-    right: 3rem;
+  &::after {
+    top: 10rem;
+    left: 8rem;
+  }
+  &::before {
+    background-color: #199eb6;
+    bottom: 5rem;
+    width: 19.125rem;
+    height: 19.125rem;
+    right: 8rem;
+  }
+}
+
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100px,-50px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100px,-100px);
   }
 }
 
