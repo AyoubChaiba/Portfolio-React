@@ -1,32 +1,32 @@
 #skills {
   position: relative;
-  &::after , &::before {
-    content: '';
-    // @media screen and (min-width: 700px) {
-    //   content: '';
-    // }
-    width: 28.125rem;
-    height: 28.125rem;
-    border-radius: 28.125rem;
-    background-color: #7c66e3;
-    position: absolute;
-    filter: blur(225px);
-    & {
-      -webkit-animation: mover 5s infinite  alternate;
-      animation: mover 5s infinite  alternate;
-    }
-  }
-  &::after {
-    top: 10rem;
-    left: 8rem;
-  }
-  &::before {
-    background-color: #199eb6;
-    bottom: 5rem;
-    width: 19.125rem;
-    height: 19.125rem;
-    right: 8rem;
-  }
+  // &::after , &::before {
+  //   content: '';
+  //   // @media screen and (min-width: 700px) {
+  //   //   content: '';
+  //   // }
+  //   width: 28.125rem;
+  //   height: 28.125rem;
+  //   border-radius: 28.125rem;
+  //   background-color: #7c66e3;
+  //   position: absolute;
+  //   filter: blur(225px);
+  //   & {
+  //     -webkit-animation: mover 5s infinite  alternate;
+  //     animation: mover 5s infinite  alternate;
+  //   }
+  // }
+  // &::after {
+  //   top: 10rem;
+  //   left: 8rem;
+  // }
+  // &::before {
+  //   background-color: #199eb6;
+  //   bottom: 5rem;
+  //   width: 19.125rem;
+  //   height: 19.125rem;
+  //   right: 8rem;
+  // }
 }
 
 

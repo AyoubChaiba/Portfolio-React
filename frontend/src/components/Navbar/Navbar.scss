@@ -5,11 +5,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  // background: rgba(255, 255, 255, 0.25);
-  // box-shadow: 0 8px 32px 0 rgba(78, 51, 197, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  // border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 50;
 }
@@ -85,7 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--third-color);
 
 
   svg {
@@ -100,22 +97,14 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-
     padding: 1rem;
-
     width: 80%;
     height: 100vh;
-    
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
-    background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
-    background-size: cover;
-    background-repeat: repeat;
-
+    background-color: var(--background-color);
     /* top box shadow */
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 

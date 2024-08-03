@@ -9,9 +9,9 @@
   }
   &::after , &::before {
     content: '';
-    // @media screen and (min-width: 700px) {
-    //   content: '';
-    // }
+    @media screen and (min-width: 700px) {
+      content: '';
+    }
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;

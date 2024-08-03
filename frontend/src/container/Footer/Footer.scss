@@ -1,32 +1,32 @@
 #contact {
   position: relative;
-  &::after , &::before {
-    content: '';
-    // @media screen and (min-width: 700px) {
-    //   content: '';
-    // }
-    width: 28.125rem;
-    height: 28.125rem;
-    border-radius: 28.125rem;
-    background-color: #7c66e3;
-    position: absolute;
-    filter: blur(225px);
-    & {
-      -webkit-animation: mover 5s infinite  alternate;
-      animation: mover 5s infinite  alternate;
-    }
-  }
-  &::after {
-    top: 10rem;
-    left: 8rem;
-  }
-  &::before {
-    bottom: 3rem;
-    width: 20.125rem;
-    height: 20.125rem;
-    right: 2rem;
-    background-color: #199eb6;
-  }
+  // &::after , &::before {
+  //   content: '';
+  //   // @media screen and (min-width: 700px) {
+  //   //   content: '';
+  //   // }
+  //   width: 28.125rem;
+  //   height: 28.125rem;
+  //   border-radius: 28.125rem;
+  //   background-color: #7c66e3;
+  //   position: absolute;
+  //   filter: blur(225px);
+  //   & {
+  //     -webkit-animation: mover 5s infinite  alternate;
+  //     animation: mover 5s infinite  alternate;
+  //   }
+  // }
+  // &::after {
+  //   top: 10rem;
+  //   left: 8rem;
+  // }
+  // &::before {
+  //   bottom: 3rem;
+  //   width: 20.125rem;
+  //   height: 20.125rem;
+  //   right: 2rem;
+  //   background-color: #199eb6;
+  // }
 }
 
 
